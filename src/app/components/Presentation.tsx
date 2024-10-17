@@ -14,7 +14,6 @@ export default function Presentation({ children }: { children: ReactNode }) {
     reveal.current = new Reveal(containerRef.current!, {
       transition: "slide",
       hash: true,
-      center: false,
     });
 
     reveal.current.initialize().then(() => {});

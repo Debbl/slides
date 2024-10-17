@@ -1,4 +1,5 @@
 "use client";
+import { transformerNotationHighlight } from "@shikijs/transformers";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import { useEffect, useMemo, useState } from "react";
@@ -49,10 +50,13 @@ export function CopyButton({
 export default function Code({
   lang,
   code,
+  lineNumbers,
+  className,
 }: ComponentProps<"pre"> & {
   code: string;
+  lineNumbers?: boolean;
   lang: BundledLanguage | "text" | "plain";
-  filename?: string;
+  className?: string;
 }): ReactElement {
   const [renderedHTML, setRenderedHTML] = useState<string>("");
 
@@ -67,6 +71,7 @@ export default function Code({
         highlighter.codeToHtml(code.trim(), {
           lang,
           theme: "one-dark-pro",
+          transformers: [transformerNotationHighlight()],
         }),
       );
     })();
@@ -78,7 +83,12 @@ export default function Code({
   ) as JSX.Element;
 
   return (
-    <div className="group relative overflow-hidden rounded-xl first:mt-0">
+    <div
+      className={cn(
+        "group relative mt-4 overflow-hidden rounded-xl first:mt-0",
+        className,
+      )}
+    >
       <div className={cn(`language-${lang}`, "group relative")}>
         <span className="absolute right-2 top-2 z-10 text-xs text-gray-300 transition-opacity group-hover:opacity-0">
           {lang}
@@ -89,7 +99,10 @@ export default function Code({
           code={code}
         />
         <figure>
-          <pre {...preJSXElement.props} className="p-4" />
+          <pre
+            {...preJSXElement.props}
+            className={cn("p-4", { "line-numbers": lineNumbers })}
+          />
         </figure>
       </div>
     </div>

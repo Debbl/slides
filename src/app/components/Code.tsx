@@ -3,7 +3,6 @@ import { transformerNotationHighlight } from "@shikijs/transformers";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import { useEffect, useMemo, useState } from "react";
-import { flushSync } from "react-dom";
 import { createHighlighter } from "shiki";
 import { cn } from "twl";
 import { Icon } from "~/icons";

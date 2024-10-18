@@ -49,7 +49,7 @@ export function CopyButton({
 
 export default function Code({
   lang,
-  code,
+  code: rawCode,
   lineNumbers,
   className,
 }: ComponentProps<"pre"> & {
@@ -58,6 +58,7 @@ export default function Code({
   lang: BundledLanguage | "text" | "plain";
   className?: string;
 }): ReactElement {
+  const code = rawCode.trim();
   const [renderedHTML, setRenderedHTML] = useState<string>("");
 
   useEffect(() => {
@@ -103,10 +104,18 @@ export default function Code({
           code={code}
         />
         <figure>
-          <pre
-            {...preJSXElement.props}
-            className={cn("p-4", { "line-numbers": lineNumbers })}
-          />
+          {renderedHTML ? (
+            <pre
+              {...preJSXElement.props}
+              className={cn("p-4", { "line-numbers": lineNumbers })}
+            />
+          ) : (
+            <pre className={cn("p-4", "bg-[rgb(40, 44, 52)]")}>
+              <code className={cn({ "!pl-[2.8125rem]": lineNumbers })}>
+                {code}
+              </code>
+            </pre>
+          )}
         </figure>
       </div>
     </div>

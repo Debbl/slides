@@ -99,78 +99,76 @@ export default function BasicOfMotion() {
         </Section>
 
         <Section>
-          <Section>
-            <h3>
-              <a
-                target="_blank"
-                href="https://www.framer.com/motion/component/"
-                rel="noreferrer"
-              >
-                Motion 组件
-              </a>
-            </h3>
-            <Image src={Image1.src} />
-          </Section>
+          <h3>
+            <a
+              target="_blank"
+              href="https://www.framer.com/motion/component/"
+              rel="noreferrer"
+            >
+              Motion 组件
+            </a>
+          </h3>
+          <Image src={Image1.src} />
+        </Section>
 
-          <Section>
-            <h3>
+        <Section>
+          <h3>
+            <a
+              target="_blank"
+              href="https://www.framer.com/motion/component/#props"
+              rel="noreferrer"
+            >
+              Props
+            </a>
+          </h3>
+          <p className="text-xl">
+            animation 里的值变化后会自动执行动画
+            <a
+              href="https://www.framer.com/motion/animation/#simple-animations"
+              target="_blank"
+              rel="noreferrer"
+            >
+              simple-animations
+            </a>
+          </p>
+          <ul>
+            <li>
               <a
+                href="https://www.framer.com/motion/component/###initial"
                 target="_blank"
-                href="https://www.framer.com/motion/component/#props"
                 rel="noreferrer"
               >
-                Props
+                initial
               </a>
-            </h3>
-            <p className="text-xl">
-              animation 里的值变化后会自动执行动画
+            </li>
+            <li>
               <a
-                href="https://www.framer.com/motion/animation/#simple-animations"
+                href="https://www.framer.com/motion/component/###initial"
                 target="_blank"
                 rel="noreferrer"
               >
-                simple-animations
+                animation
               </a>
-            </p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.framer.com/motion/component/###initial"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  initial
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.framer.com/motion/component/###initial"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  animation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.framer.com/motion/component/###initial"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  exit
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.framer.com/motion/component/###initial"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  transition
-                </a>
-              </li>
-            </ul>
-          </Section>
+            </li>
+            <li>
+              <a
+                href="https://www.framer.com/motion/component/###initial"
+                target="_blank"
+                rel="noreferrer"
+              >
+                exit
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.framer.com/motion/component/###initial"
+                target="_blank"
+                rel="noreferrer"
+              >
+                transition
+              </a>
+            </li>
+          </ul>
         </Section>
 
         <Section>

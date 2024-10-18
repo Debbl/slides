@@ -24,6 +24,12 @@ degit debbl/starter-next-app framer-motion-course
           <PreCode
             lang="bash"
             code={`
+pnpm install framer-motion
+            `}
+          />
+          <PreCode
+            lang="bash"
+            code={`
 pnpm i
             `}
           />

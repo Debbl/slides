@@ -1,15 +1,12 @@
 import { Image } from "@nextui-org/react";
 import Section from "~/components/slides/Section";
+import FramerMotion from "../framer-motion.avif";
 
 export default function FirstSection() {
   return (
     <Section>
       <div className="flex justify-center">
-        <Image
-          className="size-16 rounded-md"
-          src="https://avatars.githubusercontent.com/u/42876"
-          alt=""
-        />
+        <Image className="size-16 rounded-md" src={FramerMotion.src} alt="" />
       </div>
       <h1>Framer Motion</h1>
       <div className="flex flex-col">

@@ -1,6 +1,7 @@
-import { Image } from "@nextui-org/react";
-import Code from "~/components/Code";
+import { Code, Image } from "@nextui-org/react";
+import PreCode from "~/components/slides/PreCode";
 import Section from "~/components/slides/Section";
+import EndSection from "../components/EndSection";
 import FirstSection from "../components/FirstSection";
 import Example1 from "./example-1.png";
 
@@ -76,7 +77,7 @@ export default function Page() {
       </Section>
 
       <Section>
-        <Code
+        <PreCode
           lang="tsx"
           code={`
 "use client";
@@ -107,7 +108,7 @@ export default function Gestures() {
       </Section>
 
       <Section>
-        <Code
+        <PreCode
           lang="tsx"
           code={`
 "use client";
@@ -151,9 +152,12 @@ export default function Gestures() {
           >
             Motion Config
           </a>
-          所有的 children 共用 transition
+          所有的 <Code className="text-white">children</Code> 共用{" "}
+          <Code className="text-white">transition</Code>
         </p>
       </Section>
+
+      <EndSection />
     </>
   );
 }

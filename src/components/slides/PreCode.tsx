@@ -47,7 +47,7 @@ export function CopyButton({
   );
 }
 
-export default function Code({
+export default function PreCode({
   lang,
   code: rawCode,
   lineNumbers,

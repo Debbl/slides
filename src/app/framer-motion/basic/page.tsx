@@ -1,5 +1,5 @@
 import { Image } from "@nextui-org/react";
-import Code from "~/components/Code";
+import PreCode from "~/components/slides/PreCode";
 import Section from "~/components/slides/Section";
 import EndSection from "../components/EndSection";
 import FirstSection from "../components/FirstSection";
@@ -15,19 +15,19 @@ export default function Page() {
       <Section>
         <h3>安装环境</h3>
         <div>
-          <Code
+          <PreCode
             lang="bash"
             code={`
 degit debbl/starter-next-app framer-motion-course
             `}
           />
-          <Code
+          <PreCode
             lang="bash"
             code={`
 pnpm i
             `}
           />
-          <Code
+          <PreCode
             lang="bash"
             code={`
 pnpm run dev 
@@ -46,7 +46,7 @@ pnpm run dev
       <Section>
         <h3>无动画案例</h3>
         <div className="flex items-start gap-x-4">
-          <Code
+          <PreCode
             lang="tsx"
             className="text-xl"
             code={`
@@ -162,7 +162,7 @@ export default function BasicOfMotion() {
       </Section>
 
       <Section>
-        <Code
+        <PreCode
           className="text-xl"
           lang="tsx"
           code={`
@@ -222,7 +222,7 @@ export default function BasicOfMotion() {
       </Section>
 
       <Section>
-        <Code
+        <PreCode
           lineNumbers
           className="text-xl"
           lang="tsx"

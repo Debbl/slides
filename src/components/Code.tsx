@@ -90,7 +90,7 @@ export default function Code({
   return (
     <div
       className={cn(
-        "group relative mt-4 overflow-hidden rounded-xl first:mt-0",
+        "group relative mt-4 overflow-hidden text-xl rounded-xl first:mt-0",
         className,
       )}
     >
@@ -98,11 +98,6 @@ export default function Code({
         <span className="absolute right-2 top-2 z-10 text-xs text-gray-300 transition-opacity group-hover:opacity-0">
           {lang}
         </span>
-        <CopyButton
-          className="absolute right-2 top-2 z-10 rounded-md p-1 text-gray-300 opacity-0 transition-opacity hover:bg-gray-700 group-hover:opacity-100"
-          lang={lang}
-          code={code}
-        />
         <figure>
           {renderedHTML ? (
             <pre
@@ -117,6 +112,12 @@ export default function Code({
             </pre>
           )}
         </figure>
+
+        <CopyButton
+          className="absolute right-2 top-2 z-30 rounded-md p-1 text-gray-300 opacity-0 transition-opacity hover:bg-gray-700 group-hover:opacity-100"
+          lang={lang}
+          code={code}
+        />
       </div>
     </div>
   );

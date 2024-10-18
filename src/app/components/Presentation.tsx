@@ -16,6 +16,7 @@ export default function Presentation({ children }: { children: ReactNode }) {
       hash: true,
     });
 
+    window.reveal = reveal.current;
     reveal.current.initialize().then(() => {});
 
     return () => {

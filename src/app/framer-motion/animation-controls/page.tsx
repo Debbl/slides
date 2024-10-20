@@ -175,13 +175,13 @@ export default function AnimationControls() {
   const [scope, animate] = useAnimate();
 
   const handleClick = async () => {
-    await animate(scope.current, {
+    await animate(scope.current, { // [!code highlight]
       scale: 1.1,
       rotate: "360deg",
     });
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    await animate(scope.current, {
+    await animate(scope.current, { // [!code highlight]
       scale: 1,
       rotate: "0deg",
     });

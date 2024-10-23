@@ -21,7 +21,7 @@ export default function FirstSection() {
 
         <a
           className="text-xl"
-          href="https://www.youtube.com/watch?v=znbCa4Rr054&t=1079s"
+          href="https://www.youtube.com/watch?v=znbCa4Rr054"
           target="_blank"
           rel="noreferrer"
         >

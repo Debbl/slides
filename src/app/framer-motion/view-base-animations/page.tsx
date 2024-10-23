@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <FirstSection />
       <Section>
-        <h2>视口动画</h2>
+        <h2>视图动画</h2>
 
         <div>
           <Link href="https://www.framer.com/motion/use-in-view/">
@@ -133,6 +133,9 @@ export default function ViewBaseAnimations() {
       </Section>
 
       <Section>
+        <Link href="https://www.framer.com/motion/use-animate/##scroll-triggered-animations">
+          scroll-triggered-animations
+        </Link>
         <PreCode
           lang="tsx"
           code={`

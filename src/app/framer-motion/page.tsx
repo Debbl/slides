@@ -21,7 +21,7 @@ export default function Page() {
           </Link>
 
           <Link className="text-2xl" href="./view-base-animations">
-            视口动画
+            视图动画
           </Link>
         </div>
       </Section>

@@ -10,6 +10,9 @@ const nextConfig = {
   output: "export",
   experimental: {},
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withBundleAnalyzer(nextConfig);

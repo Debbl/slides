@@ -1,3 +1,7 @@
+.reveal img {
+  margin: 0;
+}
+
 .reveal pre {
   margin: 0;
   width: 100%;

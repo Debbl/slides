@@ -23,6 +23,10 @@ export default function Page() {
           <Link className="text-2xl" href="./view-base-animations">
             视图动画
           </Link>
+
+          <Link className="text-2xl" href="./scroll-animations">
+            滚动动画
+          </Link>
         </div>
       </Section>
     </>

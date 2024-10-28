@@ -24,6 +24,10 @@ export default function Page() {
       </Section>
 
       <Section>
+        <Image src={Example2.src} />
+      </Section>
+
+      <Section>
         <PreCode
           lang="tsx"
           code={`
@@ -34,7 +38,7 @@ export default function ScrollAnimations() {
     <div>
       <div className="p-2">
         {Array.from({ length: 30 }).map((_, i) => (
-          <p key={i}>
+          <p key={i} className="pt-2 indent-2 first:pt-0">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
             consectetur nam deleniti inventore libero quia expedita quidem
             voluptate enim, magni aspernatur tempora doloremque tenetur.

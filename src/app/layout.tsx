@@ -1,8 +1,8 @@
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
-import "./styles/theme.css";
-import "./styles/global.css";
+import "../styles/theme.css";
+import "../styles/global.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 

@@ -1,8 +1,8 @@
 import { Code, Image } from "@nextui-org/react";
 import PreCode from "~/components/slides/PreCode";
 import Section from "~/components/slides/Section";
-import EndSection from "../components/EndSection";
-import FirstSection from "../components/FirstSection";
+import EndSection from "../_components/EndSection";
+import FirstSection from "../_components/FirstSection";
 import Example1 from "./example-1.png";
 
 export default function Page() {

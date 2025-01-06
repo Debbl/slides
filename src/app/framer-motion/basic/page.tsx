@@ -1,8 +1,8 @@
 import { Image } from "@nextui-org/react";
 import PreCode from "~/components/slides/PreCode";
 import Section from "~/components/slides/Section";
-import EndSection from "../components/EndSection";
-import FirstSection from "../components/FirstSection";
+import EndSection from "../_components/EndSection";
+import FirstSection from "../_components/FirstSection";
 import ExampleGif1 from "./example-1.gif";
 import ExampleGif2 from "./example-2.gif";
 import Image1 from "./image-1.png";

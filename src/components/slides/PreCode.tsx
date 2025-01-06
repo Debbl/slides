@@ -82,10 +82,9 @@ export default function PreCode({
     if (renderedHTML) window.reveal?.sync();
   }, [renderedHTML]);
 
-  const preJSXElement = useMemo(
-    () => parse(renderedHTML),
-    [renderedHTML],
-  ) as JSX.Element;
+  const preJSXElement = useMemo(() => parse(renderedHTML), [renderedHTML]) as {
+    props: any;
+  };
 
   return (
     <div
